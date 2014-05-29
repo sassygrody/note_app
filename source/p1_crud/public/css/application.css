@@ -1,10 +1,48 @@
 .container {
-  margin: 20px auto;
+  margin:60px auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
   border: 1px dotted black;
+  background-color: white;
 }
 
 th {
   text-align: left;
 }
+
+body {
+	background-image:url('/img/better_paper.jpg');
+  	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+
+form input {
+	margin: 10px auto;
+}
+
+
+#nav li { 
+	list-style-type: none;
+	display: inline;
+	margin-right: 15px;
+	line-height: 3;
+}
+
+#nav a {
+	color: red;
+}
+
+#a_note:nth-child(even) {
+	background-color: #FFC27F;
+}
+
+a {
+	margin:8px;
+}
+
+#delete_form {
+	display: inline;
+}
+
+
+

@@ -1,0 +1,14 @@
+<div id='nav'>
+	<% if @user %>
+	<ul>
+		<li><a href="/homepage">homepage</a></li>
+		<li><a href="/new_note">new note</a></li>
+		<li><a href="/logout">logout</a></li>
+	</ul>
+	<% else %>
+	<ul>
+		<li><a href="/login">log in</a></li>
+	</ul>
+
+	<% end %>
+</div>

@@ -1,8 +1,11 @@
 get '/' do
   # Look in app/views/index.erb
+  # @messages = session[:messages]
+  # session[:messages] = nil
   erb :index
 end
 
-get '/info' do
-  Demo.new(self).info
-end
+
+# GET -------------------------------------------------
+
+

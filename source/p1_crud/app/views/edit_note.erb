@@ -1,0 +1,10 @@
+<h2>Make changes to this note</h2>
+
+
+  <form action="/note/<%=@note.id%>/edit" method="POST">
+    <input type="hidden" name="_method" value="PUT">
+    <input type="text" name="edit_title" value="<%= @note.title %>"><br>
+    <textarea name="edit_content" rows="10" cols="40"><%= @note.content %></textarea><br>
+    <input type="submit" value="Submit this edit!">
+  </form>
+

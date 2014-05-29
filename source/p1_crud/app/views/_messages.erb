@@ -1,0 +1,9 @@
+<div class="messages">
+	<% if @messages && !@messages.empty? %>
+		<ul>
+			<% @messages.each do |message| %>
+				<li id="message"><%= message %></li>
+			<% end %>
+		</ul>
+	<% end %>
+</div>

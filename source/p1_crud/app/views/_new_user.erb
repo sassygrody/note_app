@@ -1,0 +1,22 @@
+<h3>Enter user info</h3>
+
+
+
+
+<!-- does nothing right now -->
+<%= erb :_messages, layout: false %>
+<!-- ########################################## -->
+
+
+<form action="/new_user" method="POST">
+	<label>Desired username: <input type="text" name="username"></label><br>
+	<label>Desired password: <input type="password" name="password"></label><br>
+	<input type="submit" value="Create account!">
+</form>
+
+
+
+
+<!-- IF AJAXING FORM PARTIAL -->
+<!-- <div id="createuser">
+  	 </div> -->

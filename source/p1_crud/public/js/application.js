@@ -1,7 +1,14 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
+ 	$('.delete_link').on('click', function(event){
+ 		event.preventDefault();
+ 		var clicked_link = $(this)
+ 		var url = $(this).attr('href');
+ 		console.log(url);
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
-});
+ 		$.get(url, function(response){
+ 			console.log(response);
+ 			clicked_link.after(response);
+ 		}); //close get
+ 	}); //close click event
+
+}); //close document

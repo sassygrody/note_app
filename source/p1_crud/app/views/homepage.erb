@@ -1,0 +1,31 @@
+<h1>Welcome to your homepage, <%= @user.username %> </h1>
+
+<h2>All of your notes!</h2>
+	
+	<% if @notes.nil? %>
+		<p>You don't have any notes.... make some.</p>
+		<a href="/new_note"><p>Make a new note</p></a>
+
+	<% else %>
+
+	<ol>
+		<% @notes.each do |note|%>      <!-- @note held in get /homepage-->
+			
+			<div id='a_note'>
+				<li><h3><%= note.title %></h3>
+				<%= note.content %>
+				
+			</div></li>
+			<br>
+			
+		<a href="/note/<%= note.id %>/edit">Edit </a>
+
+		<a class="delete_link" href="/note/<%= note.id %>/delete">Delete </a>
+
+		<div class="appendages">append here</div>
+
+		<% end%>
+
+	</ol>
+
+<% end %>
